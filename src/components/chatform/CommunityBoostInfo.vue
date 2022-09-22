@@ -11,7 +11,7 @@
 </template>
 
 <script lang="ts">
-import { storeStream } from '@/store/stream/storeStream';
+import { storeStream } from '@/internals';
 import { watch } from '@vue/runtime-core';
 import gsap from 'gsap';
 import { Options, Vue } from 'vue-class-component';

@@ -1,6 +1,7 @@
-import { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
+import { DataStore, storeAuth, storeAutomod, storeBingo, storeChat, storeChatSuggestion, storeEmergency, storeMusic, storeOBS, storeParams, storeRaffle, storeStream, storeTimer, storeTriggers, storeTTS, storeUsers, storeVoice } from "@/internals";
+import { TwitchatDataTypes } from '@/internals';
 import BTTVUtils from '@/utils/BTTVUtils';
-import type { WheelItem } from '@/utils/CommonDataTypes';
+import type { WheelItem } from '@/internals';
 import Config from '@/utils/Config';
 import DeezerHelper from '@/utils/DeezerHelper';
 import DeezerHelperEvent from '@/utils/DeezerHelperEvent';
@@ -14,7 +15,7 @@ import SchedulerHelper from '@/utils/SchedulerHelper';
 import SevenTVUtils from '@/utils/SevenTVUtils';
 import SpotifyHelper from '@/utils/SpotifyHelper';
 import SpotifyHelperEvent from '@/utils/SpotifyHelperEvent';
-import { TriggerTypes } from '@/utils/TriggerActionData';
+import { TriggerTypes } from '@/internals';
 import TriggerActionHandler from '@/utils/TriggerActionHandler';
 import TTSUtils from '@/utils/TTSUtils';
 import TwitchatEvent from '@/utils/TwitchatEvent';
@@ -27,25 +28,6 @@ import VoicemodEvent from '@/utils/VoicemodEvent';
 import VoicemodWebSocket from '@/utils/VoicemodWebSocket';
 import { defineStore } from 'pinia';
 import type { JsonArray, JsonObject, JsonValue } from 'type-fest';
-import DataStore from './DataStore';
-import { storeAuth } from './auth/storeAuth';
-import { storeAutomod } from './automod/storeAutomod';
-import { storeBingo } from './bingo/storeBingo';
-import { storeChat } from './chat/storeChat';
-import { storeChatSuggestion } from './chatSugg/storeChatSuggestion';
-import { storeEmergency } from './emergency/storeEmergency';
-import { storeMusic } from './music/storeMusic';
-import { storeOBS } from './obs/storeOBS';
-import { storeParams } from './params/storeParams';
-import { storePoll } from './poll/storePoll';
-import { storePrediction } from './prediction/storePrediction';
-import { storeRaffle } from './raffle/storeRaffle';
-import { storeStream } from './stream/storeStream';
-import { storeTimer } from './timer/storeTimer';
-import { storeTriggers } from './triggers/storeTriggers';
-import { storeTTS } from './tts/storeTTS';
-import { storeUsers } from './users/storeUsers';
-import { storeVoice } from './voice/storeVoice';
 
 // const sOBS = storeOBS();
 // const sTTS = storeTTS();
@@ -114,6 +96,9 @@ export const storeMain = defineStore('main', {
 
 	
 	actions: {
+		inc():void {
+			this.latestUpdateIndex ++;
+		},
 
 		async startApp(payload:{authenticate:boolean, callback:(value:unknown)=>void}) {
 			let jsonConfigs;
@@ -967,4 +952,4 @@ export const storeMain = defineStore('main', {
 			this.chatAlert = null;
 		},
 	}
-})
+});

@@ -24,9 +24,9 @@
 </template>
 
 <script lang="ts">
-import { storePoll } from '@/store/poll/storePoll';
-import { storeMain } from '@/store/storeMain';
-import type { TwitchDataTypes } from '@/types/TwitchDataTypes';
+import { storePoll } from '@/internals';
+import { storeMain } from '@/internals';
+import type { TwitchDataTypes } from '@/internals';
 import TwitchUtils from '@/utils/TwitchUtils';
 import gsap from 'gsap';
 import { Options, Vue } from 'vue-class-component';

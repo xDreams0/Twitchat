@@ -1,5 +1,5 @@
-import { storeMusic } from '@/store/music/storeMusic'
-import { storeMain } from '@/store/storeMain'
+import { storeMusic } from '@/internals'
+import { storeMain } from '@/internals'
 import type { SpotifyAuthResult } from '@/utils/SpotifyDataTypes'
 import Utils from '@/utils/Utils'
 import Chat from '@/views/Chat.vue'

@@ -1,10 +1,10 @@
-import DataStore from '@/store/DataStore'
-import { TwitchatDataTypes } from '@/types/TwitchatDataTypes'
-import type { TwitchDataTypes } from '@/types/TwitchDataTypes'
+import { DataStore, storeMain, storeParams, storeStream, storeUsers } from "@/internals"
+import { TwitchatDataTypes } from '@/internals'
+import type { TwitchDataTypes } from '@/internals'
 import IRCClient from '@/utils/IRCClient'
 import type { ActivityFeedData, ChatMessageTypes, IRCEventData, IRCEventDataList } from '@/utils/IRCEventDataTypes'
 import PublicAPI from '@/utils/PublicAPI'
-import type { PubSubDataTypes } from '@/utils/PubSubDataTypes'
+import type { PubSubDataTypes } from '@/internals'
 import TriggerActionHandler from '@/utils/TriggerActionHandler'
 import TwitchatEvent from '@/utils/TwitchatEvent'
 import TwitchCypherPlugin from '@/utils/TwitchCypherPlugin'
@@ -13,10 +13,6 @@ import UserSession from '@/utils/UserSession'
 import Utils from '@/utils/Utils'
 import { defineStore } from 'pinia'
 import type { JsonObject } from 'type-fest'
-import { storeParams } from '../params/storeParams'
-import { storeMain } from '../storeMain'
-import { storeStream } from '../stream/storeStream'
-import { storeUsers } from '../users/storeUsers'
 
 export const storeChat = defineStore('chat', {
 	state: () => ({

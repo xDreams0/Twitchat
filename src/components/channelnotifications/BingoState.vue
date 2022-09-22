@@ -25,9 +25,9 @@
 </template>
 
 <script lang="ts">
-import { storeBingo } from '@/store/bingo/storeBingo';
-import type { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
-import type { BingoData } from '@/utils/CommonDataTypes';
+import { storeBingo } from '@/internals';
+import type { TwitchatDataTypes } from '@/internals';
+import type { BingoData } from '@/internals';
 import { Options, Vue } from 'vue-class-component';
 import Button from '../Button.vue';
 import PostOnChatParam from '../params/PostOnChatParam.vue';

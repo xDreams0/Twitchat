@@ -19,7 +19,7 @@
 </template>
 
 <script lang="ts">
-import { storeTimer } from '@/store/timer/storeTimer';
+import { storeTimer } from '@/internals';
 import Utils from '@/utils/Utils';
 import { watch } from 'vue';
 import { Options, Vue } from 'vue-class-component';

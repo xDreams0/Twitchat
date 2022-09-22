@@ -39,10 +39,10 @@
 </template>
 
 <script lang="ts">
-import { storeEmergency } from '@/store/emergency/storeEmergency';
-import { storeParams } from '@/store/params/storeParams';
-import { storeUsers } from '@/store/users/storeUsers';
-import type { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
+import { storeEmergency } from '@/internals';
+import { storeParams } from '@/internals';
+import { storeUsers } from '@/internals';
+import type { TwitchatDataTypes } from '@/internals';
 import TwitchUtils from '@/utils/TwitchUtils';
 import Utils from '@/utils/Utils';
 import { Options, Vue } from 'vue-class-component';

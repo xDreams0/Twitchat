@@ -47,8 +47,8 @@
 </template>
 
 <script lang="ts">
-import { storeMain } from '@/store/storeMain';
-import type { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
+import { storeMain } from '@/internals';
+import type { TwitchatDataTypes } from '@/internals';
 import Config from '@/utils/Config';
 import TwitchUtils from '@/utils/TwitchUtils';
 import { watch } from '@vue/runtime-core';

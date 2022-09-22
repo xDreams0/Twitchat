@@ -31,7 +31,7 @@
 
 <script lang="ts">
 import type { IRCEventDataList } from '@/utils/IRCEventDataTypes';
-import type { TwitchDataTypes } from '@/types/TwitchDataTypes';
+import { storeParams, type TwitchDataTypes } from '@/internals';
 import Utils from '@/utils/Utils';
 import { Options, Vue } from 'vue-class-component';
 import gsap from 'gsap';
@@ -44,6 +44,8 @@ import gsap from 'gsap';
 })
 export default class ChatPredictionResult extends Vue {
 	public predictionData!:IRCEventDataList.PredictionResult;
+	
+	public sParams = storeParams();
 
 	public get prediction():TwitchDataTypes.Prediction {
 		return this.predictionData.data;

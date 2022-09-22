@@ -30,8 +30,8 @@
 </template>
 
 <script lang="ts">
-import { storeChat } from '@/store/chat/storeChat';
-import type { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
+import { storeChat } from '@/internals';
+import type { TwitchatDataTypes } from '@/internals';
 import { watch } from 'vue';
 import { Options, Vue } from 'vue-class-component';
 import Splitter from '../../Splitter.vue';

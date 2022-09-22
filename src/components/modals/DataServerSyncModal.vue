@@ -43,15 +43,15 @@
 </template>
 
 <script lang="ts">
-import DataStore from '@/store/DataStore';
 import gsap from 'gsap';
 import { Options, Vue } from 'vue-class-component';
 import Button from '../Button.vue';
 import ToggleBlock from '../ToggleBlock.vue';
 import ParamItem from '../params/ParamItem.vue';
-import type { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
-import { storeAccount } from '@/store/account/storeAccount';
-import { storeMain } from '@/store/storeMain';
+import type { TwitchatDataTypes } from '@/internals';
+import { storeAccount,
+storeMain,
+DataStore } from "@/internals";
 
 @Options({
 	props:{},

@@ -12,9 +12,9 @@
 </template>
 
 <script lang="ts">
-import { storeTTS } from '@/store/tts/storeTTS';
-import { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
-import { TriggerActionHelpers } from '@/utils/TriggerActionData';
+import { storeTTS } from '@/internals';
+import { TwitchatDataTypes } from '@/internals';
+import { TriggerActionHelpers } from '@/internals';
 import { Options, Vue } from 'vue-class-component';
 import ParamItem from '../../../ParamItem.vue';
 

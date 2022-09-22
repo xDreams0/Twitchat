@@ -108,16 +108,16 @@
 </template>
 
 <script lang="ts">
-import { storeChat } from '@/store/chat/storeChat';
-import { storeParams } from '@/store/params/storeParams';
-import { storeMain } from '@/store/storeMain';
-import { storeUsers } from '@/store/users/storeUsers';
-import type { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
-import type { TwitchDataTypes } from '@/types/TwitchDataTypes';
-import type { TrackedUser } from '@/utils/CommonDataTypes';
+import { storeChat } from '@/internals';
+import { storeParams } from '@/internals';
+import { storeMain } from '@/internals';
+import { storeUsers } from '@/internals';
+import type { TwitchatDataTypes } from '@/internals';
+import type { TwitchDataTypes } from '@/internals';
+import type { TrackedUser } from '@/internals';
 import type { IRCEventDataList } from '@/utils/IRCEventDataTypes';
 import PublicAPI from '@/utils/PublicAPI';
-import type { PubSubDataTypes } from '@/utils/PubSubDataTypes';
+import type { PubSubDataTypes } from '@/internals';
 import TwitchatEvent from '@/utils/TwitchatEvent';
 import TwitchUtils from '@/utils/TwitchUtils';
 import UserSession from '@/utils/UserSession';

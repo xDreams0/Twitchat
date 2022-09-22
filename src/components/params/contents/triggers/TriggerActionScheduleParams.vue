@@ -45,9 +45,9 @@
 <script lang="ts">
 import Button from '@/components/Button.vue';
 import ToggleBlock from '@/components/ToggleBlock.vue';
-import { storeTriggers } from '@/store/triggers/storeTriggers';
-import { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
-import { ScheduleTriggerEvents, TriggerTypes } from '@/utils/TriggerActionData';
+import { storeTriggers } from '@/internals';
+import { TwitchatDataTypes } from '@/internals';
+import { ScheduleTriggerEvents, TriggerTypes } from '@/internals';
 import Utils from '@/utils/Utils';
 import { watch } from '@vue/runtime-core';
 import { Options, Vue } from 'vue-class-component';

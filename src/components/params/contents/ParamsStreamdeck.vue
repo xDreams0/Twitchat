@@ -34,7 +34,7 @@
 <script lang="ts">
 import Button from '@/components/Button.vue';
 import Splitter from '@/components/Splitter.vue';
-import { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
+import { TwitchatDataTypes } from '@/internals';
 import Config from '@/utils/Config';
 import { Options, Vue } from 'vue-class-component';
 

@@ -37,10 +37,10 @@
 </template>
 
 <script lang="ts">
-import { storeRaffle } from '@/store/raffle/storeRaffle';
-import { storeUsers } from '@/store/users/storeUsers';
-import type { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
-import type { RaffleData, RaffleEntry, WheelItem } from '@/utils/CommonDataTypes';
+import { storeRaffle } from '@/internals';
+import { storeUsers } from '@/internals';
+import type { TwitchatDataTypes } from '@/internals';
+import type { RaffleData, RaffleEntry, WheelItem } from '@/internals';
 import PublicAPI from '@/utils/PublicAPI';
 import TwitchatEvent from '@/utils/TwitchatEvent';
 import Utils from '@/utils/Utils';

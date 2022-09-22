@@ -39,8 +39,8 @@
 </template>
 
 <script lang="ts">
-import { storeStream } from '@/store/stream/storeStream';
-import type { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
+import { storeStream } from '@/internals';
+import type { TwitchatDataTypes } from '@/internals';
 import Utils from '@/utils/Utils';
 import { watch } from '@vue/runtime-core';
 import gsap from 'gsap';
@@ -124,6 +124,7 @@ export default class HypeTrainState extends Vue {
 
 	public dataChange():void {
 		gsap.killTweensOf(this);
+		if(!this.trainData) return;
 
 		this.timerDuration = this.trainData.state == "APPROACHING"? this.trainData.timeLeft * 1000 : 5*60*1000
 

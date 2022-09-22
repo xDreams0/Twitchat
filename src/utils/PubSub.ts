@@ -1,13 +1,13 @@
-import { storeAutomod } from '@/store/automod/storeAutomod';
-import { storeChat } from '@/store/chat/storeChat';
-import { storeEmergency } from '@/store/emergency/storeEmergency';
-import { storeParams } from '@/store/params/storeParams';
-import { storePoll } from '@/store/poll/storePoll';
-import { storePrediction } from '@/store/prediction/storePrediction';
-import { storeMain } from '@/store/storeMain';
-import { storeStream } from '@/store/stream/storeStream';
-import { storeUsers } from '@/store/users/storeUsers';
-import type { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
+import { storeAutomod } from '@/internals';
+import { storeChat } from '@/internals';
+import { storeEmergency } from '@/internals';
+import { storeParams } from '@/internals';
+import { storePoll } from '@/internals';
+import { storePrediction } from '@/internals';
+import { storeMain } from '@/internals';
+import { storeStream } from '@/internals';
+import { storeUsers } from '@/internals';
+import type { TwitchatDataTypes } from '@/internals';
 import TwitchUtils from '@/utils/TwitchUtils';
 import { LoremIpsum } from "lorem-ipsum";
 import type { ChatUserstate } from "tmi.js";
@@ -186,7 +186,7 @@ export default class PubSub extends EventDispatcher{
 
 	public async simulateHypeTrain():Promise<void> {
 		const dateOffset = (PubsubJSON.RealHypeTrainData[1] as Date).getTime();
-		const timeScale = .05;
+		const timeScale = .025;
 		for (let i = 0; i < PubsubJSON.RealHypeTrainData.length; i+=2) {
 			const date = PubsubJSON.RealHypeTrainData[i+1] as Date;
 			const event = PubsubJSON.RealHypeTrainData[i] as {data:{message:string}};

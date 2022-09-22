@@ -25,11 +25,11 @@
 
 <script lang="ts">
 import ToggleBlock from '@/components/ToggleBlock.vue';
-import { storeAccount } from '@/store/account/storeAccount';
-import { storeAuth } from '@/store/auth/storeAuth';
-import DataStore from '@/store/DataStore';
-import { storeMain } from '@/store/storeMain';
-import { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
+import { storeAccount,
+storeAuth,
+storeMain,
+DataStore } from "@/internals";
+import { TwitchatDataTypes } from '@/internals';
 import Config from '@/utils/Config';
 import UserSession from '@/utils/UserSession';
 import { watch } from '@vue/runtime-core';

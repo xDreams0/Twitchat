@@ -63,8 +63,8 @@
 </template>
 
 <script lang="ts">
-import { storeTTS } from '@/store/tts/storeTTS';
-import type { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
+import { storeTTS } from '@/internals';
+import type { TwitchatDataTypes } from '@/internals';
 import TTSUtils from '@/utils/TTSUtils';
 import gsap from 'gsap';
 import { watch, type StyleValue } from 'vue';

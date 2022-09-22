@@ -7,7 +7,7 @@
 </template>
 
 <script lang="ts">
-import type { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
+import type { TwitchatDataTypes } from '@/internals';
 import { Options, Vue } from 'vue-class-component';
 
 @Options({

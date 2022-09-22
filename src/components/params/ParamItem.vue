@@ -96,8 +96,8 @@
 </template>
 
 <script lang="ts">
-import { storeParams } from '@/store/params/storeParams';
-import type { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
+import { storeParams } from '@/internals';
+import type { TwitchatDataTypes } from '@/internals';
 import { watch } from '@vue/runtime-core';
 import gsap from 'gsap';
 import { Options, Vue } from 'vue-class-component';

@@ -1,4 +1,4 @@
-import type { TwitchatDataTypes } from '@/types/TwitchatDataTypes'
+import type { TwitchatDataTypes } from '@/internals'
 import { defineStore } from 'pinia'
 
 export const storeChatSuggestion = defineStore('chatSuggestion', {

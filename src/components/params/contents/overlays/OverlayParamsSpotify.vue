@@ -44,7 +44,6 @@
 </template>
 
 <script lang="ts">
-import DataStore from '@/store/DataStore';
 import Config from '@/utils/Config';
 import SpotifyHelper from '@/utils/SpotifyHelper';
 import { Options, Vue } from 'vue-class-component';
@@ -53,9 +52,10 @@ import ToggleBlock from '../../../ToggleBlock.vue';
 import ParamItem from '../../ParamItem.vue';
 import OverlayMusicPlayer from '../../../overlays/OverlayMusicPlayer.vue';
 import OverlayParamsMusic from './OverlayParamsMusic.vue';
-import { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
-import { storeMusic } from '@/store/music/storeMusic';
-import { storeMain } from '@/store/storeMain';
+import { TwitchatDataTypes } from '@/internals';
+import { storeMusic,
+storeMain,
+DataStore } from "@/internals";
 
 @Options({
 	props:{},

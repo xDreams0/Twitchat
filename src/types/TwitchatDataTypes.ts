@@ -1,8 +1,5 @@
-import type { RaffleData, WheelItem } from "@/utils/CommonDataTypes";
-import type { PubSubDataTypes } from "@/utils/PubSubDataTypes";
-import type { TriggerScheduleTypes, TriggerTypesValue } from "@/utils/TriggerActionData";
 import type { ChatUserstate } from "tmi.js";
-import type { TwitchDataTypes } from "./TwitchDataTypes";
+import type { RaffleData, WheelItem, TwitchDataTypes, TriggerScheduleTypes, TriggerTypesValue, PubSubDataTypes } from "@/internals";
 
 export namespace TwitchatDataTypes {
 	export const ParamsContentType = {

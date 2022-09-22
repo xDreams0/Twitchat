@@ -164,9 +164,9 @@ import Button from '@/components/Button.vue';
 import Config from '@/utils/Config';
 import type { IRCEventDataList } from '@/utils/IRCEventDataTypes';
 import OBSWebsocket, { type OBSSourceItem } from '@/utils/OBSWebsocket';
-import { TriggerEvents, TriggerTypes } from '@/utils/TriggerActionData';
+import { TriggerEvents, TriggerTypes } from '@/internals';
 import TriggerActionHandler from '@/utils/TriggerActionHandler';
-import type { TwitchDataTypes } from '@/types/TwitchDataTypes';
+import type { TwitchDataTypes } from '@/internals';
 import TwitchUtils from '@/utils/TwitchUtils';
 import Utils from '@/utils/Utils';
 import { watch } from '@vue/runtime-core';
@@ -178,9 +178,9 @@ import ToggleButton from '../../ToggleButton.vue';
 import ToggleBlock from '../../ToggleBlock.vue';
 import UserSession from '@/utils/UserSession';
 import TriggerActionScheduleParams from './triggers/TriggerActionScheduleParams.vue';
-import { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
-import { storeTriggers } from '@/store/triggers/storeTriggers';
-import { storeMain } from '@/store/storeMain';
+import { TwitchatDataTypes } from '@/internals';
+import { storeTriggers } from '@/internals';
+import { storeMain } from '@/internals';
 
 @Options({
 	props:{},

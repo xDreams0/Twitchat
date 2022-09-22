@@ -33,8 +33,8 @@
 </template>
 
 <script lang="ts">
-import { storeMusic } from '@/store/music/storeMusic';
-import type { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
+import { storeMusic } from '@/internals';
+import type { TwitchatDataTypes } from '@/internals';
 import DeezerHelper from '@/utils/DeezerHelper';
 import PublicAPI from '@/utils/PublicAPI';
 import TwitchatEvent from '@/utils/TwitchatEvent';

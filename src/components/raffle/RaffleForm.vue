@@ -95,16 +95,19 @@
 					<PostOnChatParam class="chatParam" botMessageKey="raffleStart"
 						v-if="mode=='chat' && triggerMode === false"
 						:placeholders="startPlaceholders"
+						:clearToggle="false"
 						title="Announce raffle start on chat"
 					/>
 					<PostOnChatParam class="chatParam" botMessageKey="raffle"
 						v-if="triggerMode === false"
 						:placeholders="winnerPlaceholders"
+						:clearToggle="false"
 						title="Post raffle winner on chat"
 					/>
 					<PostOnChatParam class="chatParam" botMessageKey="raffleJoin"
 						v-if="mode=='chat' && triggerMode === false"
 						:placeholders="joinPlaceholders"
+						:clearToggle="false"
 						title="Confirm when joining the raffle"
 					/>
 				</ToggleBlock>
@@ -114,12 +117,12 @@
 </template>
 
 <script lang="ts">
-import DataStore from '@/store/DataStore';
-import { storeRaffle } from '@/store/raffle/storeRaffle';
-import { storeMain } from '@/store/storeMain';
-import type { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
-import type { TwitchDataTypes } from '@/types/TwitchDataTypes';
-import type { RaffleData } from '@/utils/CommonDataTypes';
+import { storeRaffle,
+storeMain,
+DataStore } from "@/internals";
+import type { TwitchatDataTypes } from '@/internals';
+import type { TwitchDataTypes } from '@/internals';
+import type { RaffleData } from '@/internals';
 import TwitchUtils from '@/utils/TwitchUtils';
 import UserSession from '@/utils/UserSession';
 import Utils from '@/utils/Utils';

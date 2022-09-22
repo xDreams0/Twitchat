@@ -1,4 +1,4 @@
-import type { TwitchatDataTypes } from "@/types/TwitchatDataTypes";
+import type { TwitchatDataTypes } from "@/internals";
 import type { AnonSubGiftUpgradeUserstate, AnonSubGiftUserstate, ChatUserstate, MsgID, SubGiftUpgradeUserstate, SubGiftUserstate, SubMethods, SubUserstate } from "tmi.js";
 import type { TwitchDataTypes } from "../types/TwitchDataTypes";
 import type { BingoData, RaffleData, RaffleEntry } from "./CommonDataTypes";

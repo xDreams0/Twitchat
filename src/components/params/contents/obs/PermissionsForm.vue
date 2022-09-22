@@ -11,7 +11,7 @@
 </template>
 
 <script lang="ts">
-import type { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
+import type { TwitchatDataTypes } from '@/internals';
 import { watch } from 'vue';
 import { Options, Vue } from 'vue-class-component';
 import ParamItem from '../../ParamItem.vue';

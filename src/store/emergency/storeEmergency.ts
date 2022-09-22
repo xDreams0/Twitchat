@@ -1,5 +1,5 @@
-import DataStore from '@/store/DataStore';
-import type { TwitchatDataTypes } from '@/types/TwitchatDataTypes'
+import { DataStore } from "@/internals";
+import type { TwitchatDataTypes } from '@/internals'
 import IRCClient from '@/utils/IRCClient';
 import OBSWebsocket from '@/utils/OBSWebsocket';
 import PublicAPI from '@/utils/PublicAPI';

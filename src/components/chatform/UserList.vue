@@ -41,9 +41,9 @@
 </template>
 
 <script lang="ts">
-import { storeParams } from '@/store/params/storeParams';
-import { storeUsers } from '@/store/users/storeUsers';
-import type { TwitchDataTypes } from '@/types/TwitchDataTypes';
+import { storeParams } from '@/internals';
+import { storeUsers } from '@/internals';
+import type { TwitchDataTypes } from '@/internals';
 import UserSession from '@/utils/UserSession';
 import { watch } from '@vue/runtime-core';
 import gsap from 'gsap';

@@ -1,6 +1,6 @@
-import { storeChat } from "@/store/chat/storeChat";
-import { storeTTS } from "@/store/tts/storeTTS";
-import type { TwitchatDataTypes } from "@/types/TwitchatDataTypes";
+import { storeChat } from "@/internals";
+import { storeTTS } from "@/internals";
+import type { TwitchatDataTypes } from "@/internals";
 import { watch } from "vue";
 import { getTwitchatMessageType, TwitchatMessageType, type ActivityFeedData, type IRCEventData, type IRCEventDataList } from "./IRCEventDataTypes";
 import PublicAPI from "./PublicAPI";

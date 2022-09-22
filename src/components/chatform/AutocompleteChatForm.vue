@@ -25,11 +25,11 @@
 </template>
 
 <script lang="ts">
-import { storeChat } from '@/store/chat/storeChat';
-import { storeTTS } from '@/store/tts/storeTTS';
-import { storeUsers } from '@/store/users/storeUsers';
-import type { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
-import type { TwitchDataTypes } from '@/types/TwitchDataTypes';
+import { storeChat } from '@/internals';
+import { storeTTS } from '@/internals';
+import { storeUsers } from '@/internals';
+import type { TwitchatDataTypes } from '@/internals';
+import type { TwitchDataTypes } from '@/internals';
 import UserSession from '@/utils/UserSession';
 import { watch } from '@vue/runtime-core';
 import { Options, Vue } from 'vue-class-component';

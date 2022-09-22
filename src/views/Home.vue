@@ -351,14 +351,13 @@
 
 <script lang="ts">
 import Button from '@/components/Button.vue';
-import DataStore from '@/store/DataStore';
+import { DataStore, type TwitchatDataTypes } from '@/internals';
 import Config from '@/utils/Config';
 import Utils from '@/utils/Utils';
-import type {TwitchatDataTypes} from '@/types/TwitchatDataTypes';
 import gsap from 'gsap';
 import { Options, Vue } from 'vue-class-component';
-import Splitter from '../components/Splitter.vue';
 import AnchorsMenu from '../components/AnchorsMenu.vue';
+import Splitter from '../components/Splitter.vue';
 
 @Options({
 	props:{},
@@ -379,9 +378,11 @@ export default class Home extends Vue {
 	public get hasAuthToken():boolean { return DataStore.get(DataStore.TWITCH_AUTH_TOKEN) != null; }
 	public get nextIndex():number { return this.index ++; }
 	public get discordURL():string { return Config.instance.DISCORD_URL; }
+
 	public getLetter():string { return Utils.pickRand("twitchat".split("")); }
 
 	public async mounted():Promise<void> {
+		console.log("OK1")
 		const divs = this.$el.getElementsByClassName("transition");
 		let options = {
 			root: document.body,
@@ -569,7 +570,7 @@ export default class Home extends Vue {
 		.middle {
 			.description {
 				margin: auto;
-				margin-bottom: 2em;
+				margin-bottom: 1em;
 				font-style: italic;
 				opacity: .8;
 				font-size: min(2em, 7vw);

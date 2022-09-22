@@ -1,7 +1,4 @@
-import DataStore from "@/store/DataStore";
-import { storeParams } from "@/store/params/storeParams";
-import { storeMain } from "@/store/storeMain";
-import { storeUsers } from "@/store/users/storeUsers";
+import { storeParams, storeMain, storeUsers, DataStore } from "@/internals";
 import { EventDispatcher } from "@/utils/EventDispatcher";
 import { LoremIpsum } from "lorem-ipsum";
 import * as tmi from "tmi.js";

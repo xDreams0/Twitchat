@@ -1,8 +1,5 @@
-import { storeChat } from "@/store/chat/storeChat";
-import DataStore from "@/store/DataStore";
-import { storeMain } from "@/store/storeMain";
-import { storeTriggers } from "@/store/triggers/storeTriggers";
-import type { TwitchatDataTypes } from "@/types/TwitchatDataTypes";
+import { DataStore, storeChat, storeMain, storeTriggers } from "@/internals";
+import type { TwitchatDataTypes } from "@/internals";
 import type { IRCEventDataList } from "./IRCEventDataTypes";
 import { TriggerScheduleTypes, TriggerTypes } from "./TriggerActionData";
 import TriggerActionHandler from "./TriggerActionHandler";

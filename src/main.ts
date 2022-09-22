@@ -1,3 +1,4 @@
+import * as internals from "@/internals";
 import { createPopper } from '@popperjs/core';
 import gsap from 'gsap';
 import { ScrollToPlugin } from 'gsap/all';
@@ -11,9 +12,6 @@ import 'vue3-country-flag-icon/dist/CountryFlag.css'; // import stylesheet
 import App from './App.vue';
 import './less/index.less';
 import router from './router';
-import { storeAuth } from './store/auth/storeAuth';
-import DataStore from './store/DataStore';
-import { storeMain } from './store/storeMain';
 import type { TwitchatDataTypes } from './types/TwitchatDataTypes';
 import Utils from './utils/Utils';
 
@@ -24,8 +22,8 @@ gsap.registerPlugin(ScrollToPlugin);
  * Add route guards for login
  */
 router.beforeEach(async (to: RouteLocation, from: RouteLocation, next: NavigationGuardNext) => {
-	const sMain = storeMain();
-	const sAuth = storeAuth();
+	const sMain = internals.storeMain();
+	const sAuth = internals.storeAuth();
 	const needAuth = to.meta.needAuth !== false;
 	const transparent = to.meta.noBG;
 	if(transparent) {
@@ -35,7 +33,7 @@ router.beforeEach(async (to: RouteLocation, from: RouteLocation, next: Navigatio
 	}
 
 	//If landing on homepage, edirect to chat if an auth token is available
-	const authToken = DataStore.get(DataStore.TWITCH_AUTH_TOKEN);
+	const authToken = internals.DataStore.get(internals.DataStore.TWITCH_AUTH_TOKEN);
 	if(authToken && to.name === "home") {
 		next({name:"chat"});
 		return;
@@ -92,7 +90,7 @@ const confirm = <T>(title: string,
 				reject(data);
 			}
 		}
-		storeMain().confirm(confirmData);
+		internals.storeMain().confirm(confirmData);
 	});
 	return prom;
 }
@@ -103,9 +101,9 @@ const confirm = <T>(title: string,
  * @returns 
  */
 const overlayURL = (id:string):string => {
-	const port = DataStore.get(DataStore.OBS_PORT);
-	const pass = DataStore.get(DataStore.OBS_PASS);
-	const ip = DataStore.get(DataStore.OBS_IP);
+	const port = internals.DataStore.get(internals.DataStore.OBS_PORT);
+	const pass = internals.DataStore.get(internals.DataStore.OBS_PASS);
+	const ip = internals.DataStore.get(internals.DataStore.OBS_IP);
 	const params = new URLSearchParams()
 	if(port) params.append("obs_port", port);
 	if(pass) params.append("obs_pass", pass);
@@ -125,7 +123,7 @@ const placeDropdown = (dropdownList:HTMLDivElement, component:Vue, params:{width
 }
 
 
-DataStore.init();
+internals.DataStore.init();
 
 const app = createApp(App)
 .use(pinia)
@@ -157,5 +155,5 @@ app.mount('#app')
 
 window.addEventListener("beforeinstallprompt", (e:Event)=> {
 	e.preventDefault();
-	storeMain().setAhsInstaller(e as TwitchatDataTypes.InstallHandler);
+	internals.storeMain().setAhsInstaller(e as TwitchatDataTypes.InstallHandler);
 });

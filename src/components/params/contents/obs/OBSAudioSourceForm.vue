@@ -15,9 +15,8 @@
 
 <script lang="ts">
 import Button from '@/components/Button.vue';
-import DataStore from '@/store/DataStore';
-import { storeOBS } from '@/store/obs/storeOBS';
-import type { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
+import { storeOBS, DataStore } from "@/internals";
+import type { TwitchatDataTypes } from '@/internals';
 import type { OBSInputItem } from '@/utils/OBSWebsocket';
 import OBSWebsocket from '@/utils/OBSWebsocket';
 import Utils from '@/utils/Utils';

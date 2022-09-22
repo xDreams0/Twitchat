@@ -121,9 +121,9 @@ import ParamsAutomod from './contents/ParamsAutomod.vue';
 import UserSession from '@/utils/UserSession';
 import PostOnChatParam from './PostOnChatParam.vue';
 import ToggleBlock from '../ToggleBlock.vue';
-import { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
-import { storeMain } from '@/store/storeMain';
-import { storeParams } from '@/store/params/storeParams';
+import { TwitchatDataTypes } from '@/internals';
+import { storeMain } from '@/internals';
+import { storeParams } from '@/internals';
 
 @Options({
 	props:{},

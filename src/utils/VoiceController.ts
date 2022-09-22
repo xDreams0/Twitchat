@@ -1,5 +1,5 @@
 import type SpeechRecognition from "@/ISpeechRecognition";
-import { storeVoice } from "@/store/voice/storeVoice";
+import { storeVoice } from "@/internals";
 import type { JsonObject } from "type-fest";
 import { reactive, watch } from "vue";
 import PublicAPI from "./PublicAPI";

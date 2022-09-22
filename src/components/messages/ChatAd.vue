@@ -160,7 +160,6 @@
 
 <script lang="ts">
 import Button from '@/components/Button.vue';
-import DataStore from '@/store/DataStore';
 import Config from '@/utils/Config';
 import IRCClient from '@/utils/IRCClient';
 import type { IRCEventDataList } from '@/utils/IRCEventDataTypes';
@@ -169,10 +168,11 @@ import { Options, Vue } from 'vue-class-component';
 import ToggleBlock from '../ToggleBlock.vue';
 import ChatTipAndTrickAd from './ChatTipAndTrickAd.vue';
 import Splitter from '../Splitter.vue';
-import { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
-import { storeMain } from '@/store/storeMain';
-import { storeChat } from '@/store/chat/storeChat';
-import { storeUsers } from '@/store/users/storeUsers';
+import { TwitchatDataTypes } from '@/internals';
+import { storeMain,
+storeChat,
+storeUsers,
+DataStore } from "@/internals";
 
 @Options({
 	props:{

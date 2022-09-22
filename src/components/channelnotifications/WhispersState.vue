@@ -39,8 +39,8 @@
 </template>
 
 <script lang="ts">
-import { storeChat } from '@/store/chat/storeChat';
-import { storeParams } from '@/store/params/storeParams';
+import { storeChat } from '@/internals';
+import { storeParams } from '@/internals';
 import IRCClient from '@/utils/IRCClient';
 import type { IRCEventDataList } from '@/utils/IRCEventDataTypes';
 import TwitchUtils from '@/utils/TwitchUtils';

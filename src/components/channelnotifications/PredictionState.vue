@@ -35,9 +35,9 @@
 </template>
 
 <script lang="ts">
-import { storePrediction } from '@/store/prediction/storePrediction';
-import { storeMain } from '@/store/storeMain';
-import type { TwitchDataTypes } from '@/types/TwitchDataTypes';
+import { storePrediction } from '@/internals';
+import { storeMain } from '@/internals';
+import type { TwitchDataTypes } from '@/internals';
 import TwitchUtils from '@/utils/TwitchUtils';
 import gsap from 'gsap';
 import { Options, Vue } from 'vue-class-component';

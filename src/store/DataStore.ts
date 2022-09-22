@@ -1,16 +1,15 @@
-import type { TwitchatDataTypes } from "@/types/TwitchatDataTypes";
+import { storeAuth, storeEmergency } from "@/internals";
+import type { TwitchatDataTypes } from "@/internals";
 import Config from "@/utils/Config";
-import { TriggerTypes } from "@/utils/TriggerActionData";
+import { TriggerTypes } from "@/internals";
 import Utils from "@/utils/Utils";
 import type { JsonValue } from "type-fest";
-import { storeAuth } from "./auth/storeAuth";
-import { storeEmergency } from "./emergency/storeEmergency";
 
 /**
  * Fallback to sessionStorage if localStorage isn't available
  * Created : 18/10/2020 
  */
-export default class DataStore {
+export class DataStore {
 	
 	public static access_token:string;
 	public static syncToServer:boolean = false;

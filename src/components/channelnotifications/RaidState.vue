@@ -15,11 +15,11 @@
 <script lang="ts">
 import IRCClient from '@/utils/IRCClient';
 import TwitchUtils from '@/utils/TwitchUtils';
-import type { TwitchDataTypes } from '@/types/TwitchDataTypes';
+import type { TwitchDataTypes } from '@/internals';
 import Utils from '@/utils/Utils';
 import { Options, Vue } from 'vue-class-component';
 import Button from '../Button.vue';
-import { storeStream } from '@/store/stream/storeStream';
+import { storeStream } from '@/internals';
 
 @Options({
 	props:{},

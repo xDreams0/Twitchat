@@ -151,15 +151,15 @@ import PollForm from '@/components/poll/PollForm.vue';
 import PredictionForm from '@/components/prediction/PredictionForm.vue';
 import RaffleForm from '@/components/raffle/RaffleForm.vue';
 import StreamInfoForm from '@/components/streaminfo/StreamInfoForm.vue';
-import { storeBingo } from '@/store/bingo/storeBingo';
-import DataStore from '@/store/DataStore';
-import { storeEmergency } from '@/store/emergency/storeEmergency';
-import { storeParams } from '@/store/params/storeParams';
-import { storePoll } from '@/store/poll/storePoll';
-import { storePrediction } from '@/store/prediction/storePrediction';
-import { storeRaffle } from '@/store/raffle/storeRaffle';
-import { storeMain } from '@/store/storeMain';
-import { storeStream } from '@/store/stream/storeStream';
+import { storeBingo,
+storeEmergency,
+storeParams,
+storePoll,
+storePrediction,
+storeRaffle,
+storeMain,
+storeStream,
+DataStore } from "@/internals";
 import Config from '@/utils/Config';
 import DeezerHelper from '@/utils/DeezerHelper';
 import IRCClient from '@/utils/IRCClient';

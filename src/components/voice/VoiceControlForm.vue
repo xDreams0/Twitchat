@@ -16,8 +16,7 @@
 </template>
 
 <script lang="ts">
-import DataStore from '@/store/DataStore';
-import { storeVoice } from '@/store/voice/storeVoice';
+import { storeVoice, DataStore } from "@/internals";
 import VoiceController from '@/utils/VoiceController';
 import { watch } from 'vue';
 import { Options, Vue } from 'vue-class-component';

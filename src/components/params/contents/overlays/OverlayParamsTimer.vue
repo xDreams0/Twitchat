@@ -26,7 +26,7 @@
 </template>
 
 <script lang="ts">
-import { storeTimer } from '@/store/timer/storeTimer';
+import { storeTimer } from '@/internals';
 import { Options, Vue } from 'vue-class-component';
 import Button from '../../../Button.vue';
 import ToggleBlock from '../../../ToggleBlock.vue';

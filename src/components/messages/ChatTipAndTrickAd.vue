@@ -111,8 +111,8 @@
 </template>
 
 <script lang="ts">
-import { storeTimer } from '@/store/timer/storeTimer';
-import { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
+import { storeTimer } from '@/internals';
+import { TwitchatDataTypes } from '@/internals';
 import { Options, Vue } from 'vue-class-component';
 import Button from '../Button.vue';
 

@@ -1,12 +1,12 @@
-import type { TwitchatDataTypes } from '@/types/TwitchatDataTypes'
+import { storeChat } from "@/internals";
+import type { TwitchatDataTypes } from '@/internals';
 import IRCClient from '@/utils/IRCClient';
 import type { IRCEventDataList } from '@/utils/IRCEventDataTypes';
 import PublicAPI from '@/utils/PublicAPI';
 import TriggerActionHandler from '@/utils/TriggerActionHandler';
 import TwitchatEvent from '@/utils/TwitchatEvent';
-import { defineStore } from 'pinia'
+import { defineStore } from 'pinia';
 import type { JsonObject } from 'type-fest';
-import { storeChat } from '../chat/storeChat';
 
 export const storeTimer = defineStore('timer', {
 	state: () => ({

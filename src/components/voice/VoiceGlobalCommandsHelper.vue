@@ -12,7 +12,7 @@
 </template>
 
 <script lang="ts">
-import { storeVoice } from '@/store/voice/storeVoice';
+import { storeVoice } from '@/internals';
 import VoiceAction from '@/utils/VoiceAction';
 import { Options, Vue } from 'vue-class-component';
 

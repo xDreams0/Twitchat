@@ -38,8 +38,8 @@
 </template>
 
 <script lang="ts">
-import { storeChatSuggestion } from '@/store/chatSugg/storeChatSuggestion';
-import type { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
+import { storeChatSuggestion } from '@/internals';
+import type { TwitchatDataTypes } from '@/internals';
 import gsap from 'gsap';
 import { Options, Vue } from 'vue-class-component';
 import Button from '../Button.vue';

@@ -28,8 +28,8 @@
 </template>
 
 <script lang="ts">
-import { storeUsers } from '@/store/users/storeUsers';
-import type { TrackedUser } from '@/utils/CommonDataTypes';
+import { storeUsers } from '@/internals';
+import type { TrackedUser } from '@/internals';
 import { Options, Vue } from 'vue-class-component';
 import Button from '../Button.vue';
 import ChatMessage from '../messages/ChatMessage.vue';

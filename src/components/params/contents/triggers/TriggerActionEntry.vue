@@ -80,8 +80,8 @@
 import Button from '@/components/Button.vue';
 import ParamItem from '@/components/params/ParamItem.vue';
 import ToggleBlock from '@/components/ToggleBlock.vue';
-import { storeTTS } from '@/store/tts/storeTTS';
-import type { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
+import { storeTTS } from '@/internals';
+import type { TwitchatDataTypes } from '@/internals';
 import Config from '@/utils/Config';
 import type { OBSSourceItem } from '@/utils/OBSWebsocket';
 import OBSWebsocket from '@/utils/OBSWebsocket';

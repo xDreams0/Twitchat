@@ -25,9 +25,9 @@
 </template>
 
 <script lang="ts">
-import { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
+import { TwitchatDataTypes } from '@/internals';
 import Config from '@/utils/Config';
-import { MusicTriggerEvents, TriggerActionHelpers, TriggerMusicTypes } from '@/utils/TriggerActionData';
+import { MusicTriggerEvents, TriggerActionHelpers, TriggerMusicTypes } from '@/internals';
 import { Options, Vue } from 'vue-class-component';
 import ParamItem from '../../../ParamItem.vue';
 

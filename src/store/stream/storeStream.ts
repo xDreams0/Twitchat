@@ -1,10 +1,9 @@
-import DataStore from '@/store/DataStore';
-import type { TwitchatDataTypes } from '@/types/TwitchatDataTypes'
+import { DataStore, storeChat } from "@/internals";
+import type { TwitchatDataTypes } from '@/internals';
 import IRCClient from '@/utils/IRCClient';
 import { getTwitchatMessageType, TwitchatMessageType, type ActivityFeedData, type IRCEventDataList } from '@/utils/IRCEventDataTypes';
-import type { PubSubDataTypes } from '@/utils/PubSubDataTypes'
-import { defineStore } from 'pinia'
-import { storeChat } from '../chat/storeChat';
+import type { PubSubDataTypes } from '@/internals';
+import { defineStore } from 'pinia';
 
 export const storeStream = defineStore('stream', {
 	state: () => ({

@@ -48,8 +48,8 @@
 </template>
 
 <script lang="ts">
-import { storeParams } from '@/store/params/storeParams';
-import { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
+import { storeParams } from '@/internals';
+import { TwitchatDataTypes } from '@/internals';
 import OBSWebsocket from '@/utils/OBSWebsocket';
 import UserSession from '@/utils/UserSession';
 import gsap from 'gsap';

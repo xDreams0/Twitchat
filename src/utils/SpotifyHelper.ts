@@ -1,6 +1,6 @@
-import { storeMusic } from "@/store/music/storeMusic";
-import { storeMain } from "@/store/storeMain";
-import type { TwitchatDataTypes } from "@/types/TwitchatDataTypes";
+import { storeMusic } from "@/internals";
+import { storeMain } from "@/internals";
+import type { TwitchatDataTypes } from "@/internals";
 import type { JsonObject } from "type-fest";
 import { reactive } from "vue";
 import Config from "./Config";

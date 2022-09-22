@@ -1,7 +1,7 @@
 <template>
 	<div class="postonchatparam">
 
-		<ParamItem clearToggle class="parameter" :paramData="enabledParam" ref="paramItem" :error="error != ''" />
+		<ParamItem :clearToggle="clearToggle" class="parameter" :paramData="enabledParam" ref="paramItem" :error="error != ''" />
 
 		<div v-if="error" class="errorMessage">{{error}}</div>
 		
@@ -15,8 +15,8 @@
 </template>
 
 <script lang="ts">
-import { storeChat } from '@/store/chat/storeChat';
-import type { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
+import { storeChat } from '@/internals';
+import type { TwitchatDataTypes } from '@/internals';
 import { watch } from 'vue';
 import { Options, Vue } from 'vue-class-component';
 import ParamItem from './ParamItem.vue';
@@ -50,6 +50,7 @@ export default class PostOnChatParam extends Vue {
 	public icon!:string;
 	public title!:string;
 	public noToggle!:boolean;
+	public clearToggle!:boolean;
 	public botMessageKey!:TwitchatDataTypes.BotMessageField;
 	public placeholders!:TwitchatDataTypes.PlaceholderEntry[];
 

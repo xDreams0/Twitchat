@@ -29,7 +29,7 @@
 </template>
 
 <script lang="ts">
-import { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
+import { TwitchatDataTypes } from '@/internals';
 import Config from '@/utils/Config';
 import OBSWebsocket from '@/utils/OBSWebsocket';
 import { Options, Vue } from 'vue-class-component';

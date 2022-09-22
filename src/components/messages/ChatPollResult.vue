@@ -23,7 +23,7 @@
 
 <script lang="ts">
 import type { IRCEventDataList } from '@/utils/IRCEventDataTypes';
-import type { TwitchDataTypes } from '@/types/TwitchDataTypes';
+import { type TwitchDataTypes, storeParams} from '@/internals';
 import Utils from '@/utils/Utils';
 import { Options, Vue } from 'vue-class-component';
 import gsap from 'gsap';
@@ -37,6 +37,7 @@ import gsap from 'gsap';
 export default class ChatPollResult extends Vue {
 
 	public pollData!:IRCEventDataList.PollResult;
+	public sParams = storeParams();
 
 	public get poll():TwitchDataTypes.Poll {
 		return this.pollData.data;

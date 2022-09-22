@@ -78,10 +78,9 @@
 
 <script lang="ts">
 import ChatMessage from '@/components/messages/ChatMessage.vue';
-import { storeChat } from '@/store/chat/storeChat';
-import DataStore from '@/store/DataStore';
-import { storeParams } from '@/store/params/storeParams';
-import { storeMain } from '@/store/storeMain';
+import { storeChat,
+storeParams,
+DataStore } from "@/internals";
 import Config from '@/utils/Config';
 import IRCClient from '@/utils/IRCClient';
 import IRCEvent from '@/utils/IRCEvent';

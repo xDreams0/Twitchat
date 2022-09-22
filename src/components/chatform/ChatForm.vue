@@ -211,24 +211,23 @@
 </template>
 
 <script lang="ts">
-import { storeBingo } from '@/store/bingo/storeBingo';
-import { storeChat } from '@/store/chat/storeChat';
-import { storeChatSuggestion } from '@/store/chatSugg/storeChatSuggestion';
-import DataStore from '@/store/DataStore';
-import { storeEmergency } from '@/store/emergency/storeEmergency';
-import { storeMusic } from '@/store/music/storeMusic';
-import { storeParams } from '@/store/params/storeParams';
-import { storePoll } from '@/store/poll/storePoll';
-import { storePrediction } from '@/store/prediction/storePrediction';
-import { storeRaffle } from '@/store/raffle/storeRaffle';
-import { storeMain } from '@/store/storeMain';
-import { storeStream } from '@/store/stream/storeStream';
-import { storeTimer } from '@/store/timer/storeTimer';
-import { storeTTS } from '@/store/tts/storeTTS';
-import { storeUsers } from '@/store/users/storeUsers';
-import { storeVoice } from '@/store/voice/storeVoice';
-import { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
-import type { TwitchDataTypes } from '@/types/TwitchDataTypes';
+import { storeBingo,
+storeChat,
+storeChatSuggestion ,
+storeEmergency,
+storeMusic,
+storeParams,
+storePoll,
+storePrediction,
+storeRaffle,
+storeMain,
+storeStream,
+storeTimer,
+storeTTS,
+storeUsers,
+storeVoice,DataStore } from "@/internals";
+import { TwitchatDataTypes } from '@/internals';
+import type { TwitchDataTypes } from '@/internals';
 import Config from '@/utils/Config';
 import IRCClient from '@/utils/IRCClient';
 import type { IRCEventDataList } from '@/utils/IRCEventDataTypes';

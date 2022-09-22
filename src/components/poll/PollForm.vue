@@ -65,8 +65,8 @@
 
 <script lang="ts">
 import FormVoiceControllHelper from '@/components/voice/FormVoiceControllHelper';
-import { storeMain } from '@/store/storeMain';
-import type { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
+import { storeMain } from '@/internals';
+import type { TwitchatDataTypes } from '@/internals';
 import TwitchUtils from '@/utils/TwitchUtils';
 import gsap from 'gsap';
 import { watch } from 'vue';

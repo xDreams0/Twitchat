@@ -28,7 +28,7 @@
 </template>
 
 <script lang="ts">
-import DataStore from '@/store/DataStore';
+import { DataStore } from "@/internals";
 import Config from '@/utils/Config';
 import OBSWebsocket from '@/utils/OBSWebsocket';
 import { watch } from 'vue';
@@ -36,7 +36,7 @@ import { Options, Vue } from 'vue-class-component';
 import ParamItem from '../../ParamItem.vue';
 import ToggleBlock from '../../../ToggleBlock.vue';
 import Button from '../../../Button.vue';
-import type { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
+import type { TwitchatDataTypes } from '@/internals';
 
 @Options({
 	props:{},

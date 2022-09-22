@@ -18,7 +18,7 @@
 <script lang="ts">
 import Button from '@/components/Button.vue';
 import FormVoiceControllHelper from '@/components/voice/FormVoiceControllHelper';
-import { storeMain } from '@/store/storeMain';
+import { storeMain } from '@/internals';
 import Utils from '@/utils/Utils';
 import { watch } from '@vue/runtime-core';
 import gsap from 'gsap';

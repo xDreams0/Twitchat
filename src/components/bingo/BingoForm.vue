@@ -59,9 +59,9 @@
 </template>
 
 <script lang="ts">
-import { storeBingo } from '@/store/bingo/storeBingo';
-import type { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
-import type { TwitchDataTypes } from '@/types/TwitchDataTypes';
+import { storeBingo } from '@/internals';
+import type { TwitchatDataTypes } from '@/internals';
+import type { TwitchDataTypes } from '@/internals';
 import TwitchUtils from '@/utils/TwitchUtils';
 import gsap from 'gsap';
 import { Options, Vue } from 'vue-class-component';

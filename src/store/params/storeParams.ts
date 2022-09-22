@@ -1,5 +1,5 @@
-import DataStore from '@/store/DataStore';
-import type { TwitchatDataTypes } from '@/types/TwitchatDataTypes'
+import { DataStore } from "@/internals";
+import type { TwitchatDataTypes } from '@/internals'
 import BTTVUtils from '@/utils/BTTVUtils';
 import FFZUtils from '@/utils/FFZUtils';
 import SevenTVUtils from '@/utils/SevenTVUtils';

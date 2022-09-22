@@ -59,7 +59,7 @@ import Button from '../Button.vue';
 import OverlayMusicPlayer from '../overlays/OverlayMusicPlayer.vue';
 import ParamItem from '../params/ParamItem.vue';
 import VolumeBar from '../VolumeBar.vue';
-import type { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
+import type { TwitchatDataTypes } from '@/internals';
 
 @Options({
 	props:{},

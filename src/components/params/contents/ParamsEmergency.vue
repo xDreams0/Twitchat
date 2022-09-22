@@ -81,11 +81,11 @@
 </template>
 
 <script lang="ts">
-import { storeEmergency } from '@/store/emergency/storeEmergency';
-import { storeParams } from '@/store/params/storeParams';
-import { storeMain } from '@/store/storeMain';
-import { storeStream } from '@/store/stream/storeStream';
-import { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
+import { storeEmergency } from '@/internals';
+import { storeParams } from '@/internals';
+import { storeMain } from '@/internals';
+import { storeStream } from '@/internals';
+import { TwitchatDataTypes } from '@/internals';
 import OBSWebsocket, { type OBSSourceItem } from '@/utils/OBSWebsocket';
 import gsap from 'gsap';
 import { watch, type StyleValue } from 'vue';

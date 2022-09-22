@@ -18,8 +18,8 @@
 </template>
 
 <script lang="ts">
-import { storeOBS } from '@/store/obs/storeOBS';
-import type { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
+import { storeOBS } from '@/internals';
+import type { TwitchatDataTypes } from '@/internals';
 import OBSWebsocket from '@/utils/OBSWebsocket';
 import { watch } from '@vue/runtime-core';
 import gsap from 'gsap';

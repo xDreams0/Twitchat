@@ -9,7 +9,7 @@
 </template>
 
 <script lang="ts">
-import { storeParams } from '@/store/params/storeParams';
+import { storeParams } from '@/internals';
 import type { IRCEventDataList } from '@/utils/IRCEventDataTypes';
 import Utils from '@/utils/Utils';
 import gsap from 'gsap';

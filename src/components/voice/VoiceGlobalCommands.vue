@@ -12,8 +12,8 @@
 </template>
 
 <script lang="ts">
-import { storeVoice } from '@/store/voice/storeVoice';
-import type { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
+import { storeVoice } from '@/internals';
+import type { TwitchatDataTypes } from '@/internals';
 import VoiceAction from '@/utils/VoiceAction';
 import { Options, Vue } from 'vue-class-component';
 import ParamItem from '../params/ParamItem.vue';

@@ -1,4 +1,4 @@
-import {TwitchatDataTypes} from "@/types/TwitchatDataTypes";
+import {TwitchatDataTypes} from "@/internals";
 import Config from "./Config";
 
 export const TriggerTypes = {

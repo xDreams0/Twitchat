@@ -35,8 +35,8 @@ import Splitter from '../../Splitter.vue';
 import Button from '../../Button.vue';
 import { watch } from 'vue';
 import gsap from 'gsap';
-import { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
-import { storeMain } from '@/store/storeMain';
+import { TwitchatDataTypes } from '@/internals';
+import { storeMain } from '@/internals';
 import type { IRCEventDataList } from '@/utils/IRCEventDataTypes';
 
 @Options({

@@ -1,9 +1,9 @@
-import DataStore from '@/store/DataStore';
-import type { TwitchatDataTypes } from '@/types/TwitchatDataTypes'
+import { DataStore } from "@/internals";
+import type { TwitchatDataTypes } from '@/internals';
 import SchedulerHelper from '@/utils/SchedulerHelper';
-import { TriggerTypes } from '@/utils/TriggerActionData';
+import { TriggerTypes } from '@/internals';
 import TriggerActionHandler from '@/utils/TriggerActionHandler';
-import { defineStore } from 'pinia'
+import { defineStore } from 'pinia';
 
 export const storeTriggers = defineStore('triggers', {
 	state: () => ({

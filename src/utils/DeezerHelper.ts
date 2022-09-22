@@ -1,4 +1,4 @@
-import type { TwitchatDataTypes } from "@/types/TwitchatDataTypes";
+import type { TwitchatDataTypes } from "@/internals";
 import { reactive } from "vue";
 import Config from "./Config";
 import DeezerHelperEvent from "./DeezerHelperEvent";

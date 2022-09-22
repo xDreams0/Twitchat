@@ -10,7 +10,7 @@
 </template>
 
 <script lang="ts">
-import { storeVoice } from '@/store/voice/storeVoice';
+import { storeVoice } from '@/internals';
 import gsap from 'gsap';
 import { watch } from 'vue';
 import { Options, Vue } from 'vue-class-component';

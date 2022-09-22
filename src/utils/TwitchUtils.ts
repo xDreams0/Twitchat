@@ -1,6 +1,6 @@
-import { storePoll } from "@/store/poll/storePoll";
-import { storePrediction } from "@/store/prediction/storePrediction";
-import type { TwitchatDataTypes } from "@/types/TwitchatDataTypes";
+import { storePoll } from "@/internals";
+import { storePrediction } from "@/internals";
+import type { TwitchatDataTypes } from "@/internals";
 import type { Badges } from "tmi.js";
 import type { TwitchDataTypes } from "../types/TwitchDataTypes";
 import BTTVUtils from "./BTTVUtils";

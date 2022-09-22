@@ -102,8 +102,8 @@
 </template>
 
 <script lang="ts">
-import { storeChat } from '@/store/chat/storeChat';
-import type { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
+import { storeChat } from '@/internals';
+import type { TwitchatDataTypes } from '@/internals';
 import type { IRCEventDataList } from '@/utils/IRCEventDataTypes';
 import PublicAPI from '@/utils/PublicAPI';
 import TwitchatEvent from '@/utils/TwitchatEvent';

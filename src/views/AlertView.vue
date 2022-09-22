@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts">
-import { storeMain } from '@/store/storeMain';
+import { storeMain } from '@/internals';
 import { watch } from '@vue/runtime-core';
 import gsap from 'gsap';
 import { Options, Vue } from 'vue-class-component';

@@ -52,9 +52,9 @@
 </template>
 
 <script lang="ts">
-import { storeParams } from '@/store/params/storeParams';
-import { storeMain } from '@/store/storeMain';
-import type { TwitchDataTypes } from '@/types/TwitchDataTypes';
+import { storeParams } from '@/internals';
+import { storeMain } from '@/internals';
+import type { TwitchDataTypes } from '@/internals';
 import Config from '@/utils/Config';
 import TwitchUtils from '@/utils/TwitchUtils';
 import UserSession from '@/utils/UserSession';

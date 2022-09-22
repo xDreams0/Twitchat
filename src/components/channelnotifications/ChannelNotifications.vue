@@ -35,14 +35,14 @@
 </template>
 
 <script lang="ts">
-import { storeBingo } from '@/store/bingo/storeBingo';
-import { storeChat } from '@/store/chat/storeChat';
-import { storeChatSuggestion } from '@/store/chatSugg/storeChatSuggestion';
-import { storeMusic } from '@/store/music/storeMusic';
-import { storePoll } from '@/store/poll/storePoll';
-import { storePrediction } from '@/store/prediction/storePrediction';
-import { storeRaffle } from '@/store/raffle/storeRaffle';
-import { storeStream } from '@/store/stream/storeStream';
+import { storeBingo } from '@/internals';
+import { storeChat } from '@/internals';
+import { storeChatSuggestion } from '@/internals';
+import { storeMusic } from '@/internals';
+import { storePoll } from '@/internals';
+import { storePrediction } from '@/internals';
+import { storeRaffle } from '@/internals';
+import { storeStream } from '@/internals';
 import { watch } from '@vue/runtime-core';
 import { Options, Vue } from 'vue-class-component';
 import Button from '../Button.vue';

@@ -30,9 +30,8 @@
 </template>
 
 <script lang="ts">
-import DataStore from '@/store/DataStore';
-import { storeMusic } from '@/store/music/storeMusic';
-import type { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
+import { storeMusic, DataStore } from "@/internals";
+import type { TwitchatDataTypes } from '@/internals';
 import { watch } from 'vue';
 import { Options, Vue } from 'vue-class-component';
 import ToggleBlock from '../../../ToggleBlock.vue';

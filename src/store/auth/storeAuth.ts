@@ -1,5 +1,5 @@
 import router from "@/router";
-import type { TwitchDataTypes } from "@/types/TwitchDataTypes";
+import type { TwitchDataTypes } from "@/internals";
 import Config from "@/utils/Config";
 import IRCClient from "@/utils/IRCClient";
 import PubSub from "@/utils/PubSub";
@@ -7,7 +7,7 @@ import TwitchUtils from "@/utils/TwitchUtils";
 import UserSession from "@/utils/UserSession";
 import Utils from "@/utils/Utils";
 import { defineStore } from 'pinia';
-import DataStore from "@/store/DataStore";
+import {DataStore} from "@/internals";
 import { storeMain } from '../storeMain';
 import { storeUsers } from "../users/storeUsers";
 

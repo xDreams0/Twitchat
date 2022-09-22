@@ -1,8 +1,8 @@
-import { storeBingo } from "@/store/bingo/storeBingo";
-import { storeChat } from "@/store/chat/storeChat";
-import { storeEmergency } from "@/store/emergency/storeEmergency";
-import { storeRaffle } from "@/store/raffle/storeRaffle";
-import type { TwitchatDataTypes } from "@/types/TwitchatDataTypes";
+import { storeBingo } from "@/internals";
+import { storeChat } from "@/internals";
+import { storeEmergency } from "@/internals";
+import { storeRaffle } from "@/internals";
+import type { TwitchatDataTypes } from "@/internals";
 import type { JsonObject } from "type-fest";
 import Config from "./Config";
 import DeezerHelper from "./DeezerHelper";

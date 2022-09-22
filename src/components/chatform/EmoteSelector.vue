@@ -47,11 +47,11 @@
 
 <script lang="ts">
 import TwitchUtils from '@/utils/TwitchUtils';
-import type { TwitchDataTypes } from '@/types/TwitchDataTypes';
+import type { TwitchDataTypes } from '@/internals';
 import gsap from 'gsap';
 import { Options, Vue } from 'vue-class-component';
 import UserSession from '@/utils/UserSession';
-import { storeChat } from '@/store/chat/storeChat';
+import { storeChat } from '@/internals';
 
 @Options({
 	props:{},

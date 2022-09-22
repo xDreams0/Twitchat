@@ -29,7 +29,7 @@
 </template>
 
 <script lang="ts">
-import { storeChat } from '@/store/chat/storeChat';
+import { storeChat } from '@/internals';
 import type { IRCEventDataList } from '@/utils/IRCEventDataTypes';
 import { watch } from '@vue/runtime-core';
 import { Options, Vue } from 'vue-class-component';

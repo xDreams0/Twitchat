@@ -36,10 +36,10 @@
 </template>
 
 <script lang="ts">
-import { storePoll } from '@/store/poll/storePoll';
-import { storePrediction } from '@/store/prediction/storePrediction';
-import { storeStream } from '@/store/stream/storeStream';
-import type { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
+import { storePoll } from '@/internals';
+import { storePrediction } from '@/internals';
+import { storeStream } from '@/internals';
+import type { TwitchatDataTypes } from '@/internals';
 import IRCClient from '@/utils/IRCClient';
 import UserSession from '@/utils/UserSession';
 import Utils from '@/utils/Utils';

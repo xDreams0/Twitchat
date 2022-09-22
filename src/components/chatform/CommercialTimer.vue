@@ -6,7 +6,7 @@
 </template>
 
 <script lang="ts">
-import { storeStream } from '@/store/stream/storeStream';
+import { storeStream } from '@/internals';
 import { Options, Vue } from 'vue-class-component';
 
 @Options({

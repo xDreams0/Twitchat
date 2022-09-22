@@ -1,10 +1,10 @@
-import type { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
-import type { BingoData } from '@/utils/CommonDataTypes'
+import type { TwitchatDataTypes } from '@/internals';
+import type { BingoData } from '@/internals'
 import IRCClient from '@/utils/IRCClient';
 import TwitchUtils from '@/utils/TwitchUtils';
 import Utils from '@/utils/Utils';
 import { defineStore } from 'pinia'
-import { storeChat } from '../chat/storeChat';
+import { storeChat } from "@/internals";
 
 export const storeBingo = defineStore('bingo', {
 	state: () => ({

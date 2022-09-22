@@ -145,10 +145,10 @@
 
 <script lang="ts">
 import ChatMessage from '@/components/messages/ChatMessage.vue';
-import { storeChat } from '@/store/chat/storeChat';
-import { storeParams } from '@/store/params/storeParams';
-import { storeTTS } from '@/store/tts/storeTTS';
-import type { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
+import { storeChat } from '@/internals';
+import { storeParams } from '@/internals';
+import { storeTTS } from '@/internals';
+import type { TwitchatDataTypes } from '@/internals';
 import type { IRCEventDataList } from '@/utils/IRCEventDataTypes';
 import PublicAPI from '@/utils/PublicAPI';
 import PubSub from '@/utils/PubSub';

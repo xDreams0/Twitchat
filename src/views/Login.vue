@@ -80,9 +80,10 @@
 
 <script lang="ts">
 import Button from '@/components/Button.vue';
-import { storeAuth } from '@/store/auth/storeAuth';
-import DataStore from '@/store/DataStore';
-import { storeMain } from '@/store/storeMain';
+import {
+DataStore, storeAuth,
+storeMain
+} from "@/internals";
 import Config from '@/utils/Config';
 import TwitchUtils from '@/utils/TwitchUtils';
 import Utils from '@/utils/Utils';

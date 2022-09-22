@@ -6,8 +6,8 @@
 </template>
 
 <script lang="ts">
-import { storeParams } from '@/store/params/storeParams';
-import { storeMain } from '@/store/storeMain';
+import { storeParams } from '@/internals';
+import { storeMain } from '@/internals';
 import type { IRCEventDataList } from '@/utils/IRCEventDataTypes';
 import TwitchUtils from '@/utils/TwitchUtils';
 import Utils from '@/utils/Utils';

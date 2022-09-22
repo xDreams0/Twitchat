@@ -1,5 +1,5 @@
-import DataStore from '@/store/DataStore';
-import type { TwitchatDataTypes } from '@/types/TwitchatDataTypes'
+import { DataStore } from "@/internals";
+import type { TwitchatDataTypes } from '@/internals'
 import { defineStore } from 'pinia'
 
 export const storeAutomod = defineStore('automod', {

@@ -28,6 +28,7 @@
 </template>
 
 <script lang="ts">
+import { storeParams } from '@/internals';
 import { getTwitchatMessageType, TwitchatMessageType, type IRCEventDataList } from '@/utils/IRCEventDataTypes';
 import Utils from '@/utils/Utils';
 import gsap from 'gsap';
@@ -57,6 +58,7 @@ export default class ChatHypeTrainResult extends Vue {
 	public subgifts:number = 0;
 	public primes:number = 0;
 	public bits:number = 0;
+	public sParams = storeParams();
 	
 	public get time():string {
 		const d = new Date(parseInt(this.result.tags['tmi-sent-ts'] as string));

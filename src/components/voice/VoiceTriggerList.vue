@@ -74,7 +74,7 @@ import Button from '../Button.vue';
 import ToggleBlock from '../ToggleBlock.vue';
 import VoiceGlobalCommands from './VoiceGlobalCommands.vue';
 import draggable from 'vuedraggable';
-import { storeVoice } from '@/store/voice/storeVoice';
+import { storeVoice } from '@/internals';
 
 @Options({
 	props:{

@@ -26,7 +26,7 @@
 </template>
 
 <script lang="ts">
-import type { WheelItem } from '@/utils/CommonDataTypes';
+import type { WheelItem } from '@/internals';
 import PublicAPI from '@/utils/PublicAPI';
 import TwitchatEvent from '@/utils/TwitchatEvent';
 import TwitchUtils from '@/utils/TwitchUtils';

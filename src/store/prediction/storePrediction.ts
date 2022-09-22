@@ -1,9 +1,9 @@
-import type { TwitchDataTypes } from '@/types/TwitchDataTypes'
+import type { TwitchDataTypes } from '@/internals'
 import IRCClient from '@/utils/IRCClient';
 import type { ActivityFeedData, IRCEventDataList } from '@/utils/IRCEventDataTypes';
 import TriggerActionHandler from '@/utils/TriggerActionHandler';
 import { defineStore } from 'pinia'
-import { storeChat } from '../chat/storeChat';
+import { storeChat } from "@/internals";
 
 export const storePrediction = defineStore('prediction', {
 	state: () => ({

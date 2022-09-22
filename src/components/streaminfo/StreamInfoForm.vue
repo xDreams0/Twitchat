@@ -57,12 +57,12 @@ import Button from '../Button.vue';
 import ParamItem from '../params/ParamItem.vue';
 import AutoCompleteForm from '../params/AutoCompleteForm.vue';
 import TwitchUtils from '@/utils/TwitchUtils';
-import type { TwitchDataTypes } from '@/types/TwitchDataTypes';
+import type { TwitchDataTypes } from '@/internals';
 import Utils from '@/utils/Utils';
 import ToggleBlock from '../ToggleBlock.vue';
-import type { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
-import { storeStream } from '@/store/stream/storeStream';
-import { storeMain } from '@/store/storeMain';
+import type { TwitchatDataTypes } from '@/internals';
+import { storeStream } from '@/internals';
+import { storeMain } from '@/internals';
 
 @Options({
 	props:{},

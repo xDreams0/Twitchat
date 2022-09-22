@@ -61,8 +61,8 @@
 </template>
 
 <script lang="ts">
-import { storeUsers } from '@/store/users/storeUsers';
-import type { TwitchDataTypes } from '@/types/TwitchDataTypes';
+import { storeUsers } from '@/internals';
+import type { TwitchDataTypes } from '@/internals';
 import type { IRCEventDataList } from '@/utils/IRCEventDataTypes';
 import TwitchUtils from '@/utils/TwitchUtils';
 import UserSession from '@/utils/UserSession';

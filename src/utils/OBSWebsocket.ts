@@ -1,4 +1,4 @@
-import { storeOBS } from '@/store/obs/storeOBS';
+import { storeOBS } from '@/internals';
 import OBSWebSocket from 'obs-websocket-js';
 import type { JsonArray, JsonObject } from 'type-fest';
 import { reactive } from 'vue';

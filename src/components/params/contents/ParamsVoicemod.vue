@@ -44,8 +44,8 @@ import { Options, Vue } from 'vue-class-component';
 import ParamItem from '../ParamItem.vue';
 import PermissionsForm from './obs/PermissionsForm.vue';
 import Splitter from '../../Splitter.vue';
-import { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
-import { storeVoice } from '@/store/voice/storeVoice';
+import { TwitchatDataTypes } from '@/internals';
+import { storeVoice } from '@/internals';
 
 @Options({
 	props:{},

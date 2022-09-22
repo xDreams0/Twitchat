@@ -41,13 +41,13 @@
 </template>
 
 <script lang="ts">
-import { storeBingo } from '@/store/bingo/storeBingo';
-import { storeChat } from '@/store/chat/storeChat';
-import { storePoll } from '@/store/poll/storePoll';
-import { storePrediction } from '@/store/prediction/storePrediction';
-import { storeRaffle } from '@/store/raffle/storeRaffle';
-import { storeMain } from '@/store/storeMain';
-import { storeUsers } from '@/store/users/storeUsers';
+import { storeBingo } from '@/internals';
+import { storeChat } from '@/internals';
+import { storePoll } from '@/internals';
+import { storePrediction } from '@/internals';
+import { storeRaffle } from '@/internals';
+import { storeMain } from '@/internals';
+import { storeUsers } from '@/internals';
 import type { IRCEventDataList } from '@/utils/IRCEventDataTypes';
 import { Options, Vue } from 'vue-class-component';
 import Button from '../Button.vue';

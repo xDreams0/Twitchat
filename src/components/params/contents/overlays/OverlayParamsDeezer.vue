@@ -37,8 +37,8 @@ import Button from '../../../Button.vue';
 import ToggleBlock from '../../../ToggleBlock.vue';
 import OverlayMusicPlayer from '../../../overlays/OverlayMusicPlayer.vue';
 import OverlayParamsMusic from './OverlayParamsMusic.vue';
-import { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
-import { storeMusic } from '@/store/music/storeMusic';
+import { TwitchatDataTypes } from '@/internals';
+import { storeMusic } from '@/internals';
 
 @Options({
 	props:{},

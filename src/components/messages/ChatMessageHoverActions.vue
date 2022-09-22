@@ -39,10 +39,10 @@
 </template>
 
 <script lang="ts">
-import { storeChat } from '@/store/chat/storeChat';
-import { storeMain } from '@/store/storeMain';
-import { storeTTS } from '@/store/tts/storeTTS';
-import { storeUsers } from '@/store/users/storeUsers';
+import { storeChat } from '@/internals';
+import { storeMain } from '@/internals';
+import { storeTTS } from '@/internals';
+import { storeUsers } from '@/internals';
 import type { IRCEventDataList } from '@/utils/IRCEventDataTypes';
 import UserSession from '@/utils/UserSession';
 import Utils from '@/utils/Utils';

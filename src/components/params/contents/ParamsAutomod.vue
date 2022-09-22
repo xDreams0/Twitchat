@@ -78,8 +78,8 @@
 </template>
 
 <script lang="ts">
-import { storeAutomod } from '@/store/automod/storeAutomod';
-import type { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
+import { storeAutomod } from '@/internals';
+import type { TwitchatDataTypes } from '@/internals';
 import UnicodeUtils from '@/utils/UnicodeUtils';
 import { reactive, watch, type StyleValue } from 'vue';
 import { Options, Vue } from 'vue-class-component';

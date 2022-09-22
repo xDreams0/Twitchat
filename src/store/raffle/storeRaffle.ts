@@ -1,4 +1,5 @@
-import type { RaffleData, RaffleEntry, WheelItem } from '@/utils/CommonDataTypes'
+import { storeChat, storeTimer } from "@/internals";
+import type { RaffleData, RaffleEntry, WheelItem } from '@/internals';
 import IRCClient from '@/utils/IRCClient';
 import type { IRCEventDataList } from '@/utils/IRCEventDataTypes';
 import PublicAPI from '@/utils/PublicAPI';
@@ -6,10 +7,8 @@ import TriggerActionHandler from '@/utils/TriggerActionHandler';
 import TwitchatEvent from '@/utils/TwitchatEvent';
 import TwitchUtils from '@/utils/TwitchUtils';
 import Utils from '@/utils/Utils';
-import { defineStore } from 'pinia'
+import { defineStore } from 'pinia';
 import type { JsonObject } from 'type-fest';
-import { storeChat } from '../chat/storeChat';
-import { storeTimer } from '../timer/storeTimer';
 
 export const storeRaffle = defineStore('raffle', {
 	state: () => ({

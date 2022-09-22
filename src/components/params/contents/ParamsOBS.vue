@@ -80,10 +80,10 @@
 <script lang="ts">
 import Button from '@/components/Button.vue';
 import ToggleBlock from '@/components/ToggleBlock.vue';
-import DataStore from '@/store/DataStore';
-import { storeOBS } from '@/store/obs/storeOBS';
-import { storeMain } from '@/store/storeMain';
-import type { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
+import { storeOBS,
+storeMain,
+DataStore } from "@/internals";
+import type { TwitchatDataTypes } from '@/internals';
 import Config from '@/utils/Config';
 import OBSWebsocket from '@/utils/OBSWebsocket';
 import { watch } from '@vue/runtime-core';

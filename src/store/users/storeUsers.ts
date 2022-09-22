@@ -1,12 +1,12 @@
-import type { TwitchDataTypes } from '@/types/TwitchDataTypes';
-import type { TrackedUser } from '@/utils/CommonDataTypes';
+import type { TwitchDataTypes } from '@/internals';
+import type { TrackedUser } from '@/internals';
 import type { IRCEventDataList } from '@/utils/IRCEventDataTypes';
-import type { PubSubDataTypes } from '@/utils/PubSubDataTypes';
+import type { PubSubDataTypes } from '@/internals';
 import TwitchUtils from '@/utils/TwitchUtils';
 import UserSession from '@/utils/UserSession';
 import { defineStore } from 'pinia';
 import type { ChatUserstate } from 'tmi.js';
-import { storeChat } from '../chat/storeChat';
+import { storeChat } from "@/internals";
 
 export const storeUsers = defineStore('users', {
 	state: () => ({

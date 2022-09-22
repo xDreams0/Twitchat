@@ -39,11 +39,11 @@
 </template>
 
 <script lang="ts">
-import { storeTriggers } from '@/store/triggers/storeTriggers';
-import type { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
-import type { TwitchDataTypes } from '@/types/TwitchDataTypes';
+import { storeTriggers } from '@/internals';
+import type { TwitchatDataTypes } from '@/internals';
+import type { TwitchDataTypes } from '@/internals';
 import Config from '@/utils/Config';
-import { TriggerEvents, TriggerTypes } from '@/utils/TriggerActionData';
+import { TriggerEvents, TriggerTypes } from '@/internals';
 import TwitchUtils from '@/utils/TwitchUtils';
 import UserSession from '@/utils/UserSession';
 import { watch } from 'vue';

@@ -83,7 +83,7 @@
 </template>
 
 <script lang="ts">
-import DataStore from '@/store/DataStore';
+import { DataStore, storeChat } from "@/internals";
 import { TwitchatMessageType, getTwitchatMessageType, type ActivityFeedData } from '@/utils/IRCEventDataTypes';
 import { watch } from '@vue/runtime-core';
 import gsap from 'gsap';
@@ -99,7 +99,6 @@ import ActivityFeedFilters from './ActivityFeedFilters.vue';
 import ChatCountdownResult from '../messages/ChatCountdownResult.vue';
 import ChatHypeTrainResult from '../messages/ChatHypeTrainResult.vue';
 import Button from '../Button.vue';
-import { storeChat } from '@/store/chat/storeChat';
 
 @Options({
 	props:{

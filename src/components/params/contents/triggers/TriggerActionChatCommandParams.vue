@@ -24,9 +24,9 @@
 <script lang="ts">
 import Button from '@/components/Button.vue';
 import ToggleBlock from '@/components/ToggleBlock.vue';
-import { storeTriggers } from '@/store/triggers/storeTriggers';
-import type { TwitchatDataTypes } from '@/types/TwitchatDataTypes';
-import { TriggerTypes } from '@/utils/TriggerActionData';
+import { storeTriggers } from '@/internals';
+import type { TwitchatDataTypes } from '@/internals';
+import { TriggerTypes } from '@/internals';
 import { watch } from '@vue/runtime-core';
 import { Options, Vue } from 'vue-class-component';
 import ParamItem from '../../ParamItem.vue';
